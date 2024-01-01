@@ -9,6 +9,10 @@ import Heading from "./Components/Heading.js";
 import StarProduct from "./Components/StarProduct.js";
 import HotAccessoriesMenu from "./Components/HotAccessoriesMenu.js";
 import HotAccessories from "./Components/HotAccessories.js";
+import ProductReviews from "./Components/ProductReviews.js"
+import Videos from "./Components/Videos.js";
+import Banner from "./Components/Banner.js";
+import Footer from "./Components/Footer.js"
 
 function App() {
   const { banner } = data;
@@ -34,6 +38,18 @@ function App() {
 
         <Route exact path="/mobileAccessories" element={<HotAccessories mobileAccessories={data.hotAccessories.mobileAccessories} mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories} />} />
       </Routes>
+
+      <Heading text="PRODUCT REVIEWS" />
+      <ProductReviews productReviews={data.productReviews}/>
+      <Heading text="VIDEOS" />
+
+      <Videos videos={data.videos} />
+
+      <Heading text="IN THE PRESS" />
+
+      <Banner banner={data.banner} />
+
+      <Footer footer={data.footer}/>
     </Router>
   );
 }
