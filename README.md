@@ -1,4 +1,4 @@
-
+This is a MI Mobile Store Clone which I made using React JS. In this project you can find all MI Products.
 
 # Getting Started with Create React App
 
